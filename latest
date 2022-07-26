@@ -12,15 +12,15 @@ xrc:inner:lib gitea utils config current token user issue/main project/main proj
 
 x log init gitea
 ___x_cmd_gitea(){
-    param:subcmd ___x_cmd_gitea        \
+    param:subcmd ___x_cmd_gitea         \
         user        "user"              \
-        project     "project command"   \
+        repo        "repo manage"       \
         config      "save, load, which" \
         current     "current user"      \
-        groups      "groups manage"     \
         subgroup    "subgroups manage"  \
         issue       "issue manage"      \
-        token       "set token"
+        token       "set token"         \
+        org         "organization manage"
     param:subcmd:try
     param:run
 
